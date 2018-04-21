@@ -146,6 +146,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.w3-ks-blue,.w3-hover-ks-blue:hover{color:#000!important;background-color:#52b3dd!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
 .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
 .w3-light-blue,.w3-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
@@ -195,6 +196,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-red,.w3-hover-text-red:hover{color:#f44336!important}
 .w3-text-sand,.w3-hover-text-sand:hover{color:#fdf5e6!important}
 .w3-text-teal,.w3-hover-text-teal:hover{color:#009688!important}
+.w3-text-ks-blue,.w3-hover-text-ks-blue:hover{color:#52b3dd!important}
 .w3-text-yellow,.w3-hover-text-yellow:hover{color:#d2be0e!important}
 .w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
 .w3-text-black,.w3-hover-text-black:hover{color:#000!important}
@@ -221,6 +223,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-red,.w3-hover-border-red:hover{border-color:#f44336!important}
 .w3-border-sand,.w3-hover-border-sand:hover{border-color:#fdf5e6!important}
 .w3-border-teal,.w3-hover-border-teal:hover{border-color:#009688!important}
+.w3-border-ks-blue,.w3-hover-border-ks-blue:hover{border-color:#52b3dd!important}
 .w3-border-yellow,.w3-hover-border-yellow:hover{border-color:#ffeb3b!important}
 .w3-border-white,.w3-hover-border-white:hover{border-color:#fff!important}
 .w3-border-black,.w3-hover-border-black:hover{border-color:#000!important}
