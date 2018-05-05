@@ -1,9 +1,59 @@
+<script>
+    function filter(){
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("tableSearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("storiesTable");
+        tr=table.getElementsByTagName("tr");
+        
+        for(i = 0; i < tr.length; i++)
+        {
+            td = tr[i].getElementsByTagName("td")[0];
+            if(td)
+            {
+                if(td.innerHTML.toUpperCase().indexOf(filter) > -1)
+                {
+                    tr[i].style.display = "";
+                }
+                else
+                {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
 <html>
-<body>
-<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=25&amp;end=55" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-    <h3>Bill & Grace Stealing Peaches</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=537;end=815" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h3>Walter Herbert Slack Jr and the Watermelon Thieves</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=85;end=535" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</body>
+    <body>
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=25&amp;end=55" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+        <!---<h3>Bill & Grace Stealing Peaches</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=537;end=815" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h3>Walter Herbert Slack Jr and the Watermelon Thieves</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=85;end=535" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>--->
+    
+    <input type="text" id="tableSearch" onkeyup="filter()" placeholder="Search table for ...">
+        
+    <table id="storiesTable">
+        <tr>
+            <th>Story Title</th>
+            <th>Recorded Story</th>
+            <th>People Involved</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td>Description of Ajetta Wright Slack</td>
+            <td><iframe width="300" height="169" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=2751;end=3177" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+            <td>Ajetta Wright Slack</td>
+            <td>Bill Grace and Alan Slack Interview - 1995</td>
+        </tr>
+        <tr>
+            <td>Grandpa Miller going to Nevada to find work</td>
+            <td><iframe width="300" height="169" src="https://www.youtube.com/embed/67SWXDELAcE?rel=0&amp;start=3677;end=4075" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></td>
+            <td>Albert Edwin Miller</td>
+            <td>Bill Grace and Alan Slack Interview - 1995</td>
+        </tr>
+    </table>    
+    
+    </body>
 </html>
